@@ -1,0 +1,9 @@
+name: {{ cookiecutter.project_slug }}_dev
+channels:
+  - conda-forge
+  - openalea3
+dependencies:
+  - python
+  - pip
+  - pip:
+      - -e '..[test,dev,doc]'

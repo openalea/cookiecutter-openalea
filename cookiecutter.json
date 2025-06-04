@@ -1,0 +1,13 @@
+{
+  "full_name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "github_username": "openalea-incubator",
+  "project_name": "python_project_name",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "description": "Project short description.",
+  "version": "0.0.1",
+  "_copy_without_render": [
+    "conda/meta.yaml",
+    ".github/workflows/conda-package-build.yml"
+  ]
+}
