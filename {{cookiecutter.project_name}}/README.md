@@ -19,6 +19,6 @@ _________________
 
 Thanks to all that ontribute making this package what it is !
 
-<a href="https://github.com/openalea/astk/graphs/contributors">
+<a href="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/graphs/contributors">
   <img src="https://contrib.rocks/image?repo={{cookiecutter.github_username}}/{{cookiecutter.project_name}}" />
 </a>
