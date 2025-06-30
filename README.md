@@ -1,4 +1,4 @@
-# cookiecutter-python
+# cookiecutter-openalea
 
 An template for [OpenAlea](https://openalea.readthedocs.io/en/latest/) packages. It follows the [OpenAlea development guidelines](https://openalea.readthedocs.io/en/latest/development/guidelines.html), and provides all necessary files and configurations to develop a new package up to the continuous integration and package publication on a conda channel.
 
