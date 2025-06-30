@@ -5,9 +5,9 @@
   "project_name": "python_project_name",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "description": "Project short description.",
+  "pure_python": true,
   "version": "0.0.1",
   "_copy_without_render": [
-    "conda/meta.yaml",
     ".github/workflows/conda-package-build.yml"
   ]
 }

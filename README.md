@@ -6,7 +6,7 @@ Best used with [cruft](https://cruft.github.io/cruft/)
 
 To use:
 
-        cruft create https://github.com/openalea-incubator/cookiecutter/
+        cruft create https://github.com/openalea/cookiecutter-openalea/
 
 ## Features
 
@@ -17,7 +17,7 @@ To use:
 
 ## Typical workflow
 
-1. Create a new package using `cruft create https://github.com/openalea-incubator/cookiecutter/`
+1. Create a new package using `cruft create https://github.com/openalea/cookiecutter-openalea/`
 2. Initiate your git repository: `git init` (needed for `setuptools_scm` to work properly)
 3. Install the package in editable mode with dev dependencies: `mamba env create -f conda/environment.yml`
 4. Activate the environment: `mamba activate my_project_dev` # Replace `my_project` with your project slug defined in `cookiecutter.json`
