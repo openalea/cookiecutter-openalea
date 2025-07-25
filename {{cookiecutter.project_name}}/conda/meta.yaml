@@ -54,9 +54,11 @@ test:
   imports:
     - openalea.{{ cookiecutter.project_slug }}
   requires:
+{% raw %}
     {% for dep in test_deps %}
     - {{ dep }}
     {% endfor %}
+{% endraw %}
   source_files:
     - test/
   commands:
