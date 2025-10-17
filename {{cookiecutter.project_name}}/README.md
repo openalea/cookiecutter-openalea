@@ -9,7 +9,7 @@ _________________
 
 _________________
 
-[Read Latest Documentation](https://{{ cookiecutter.project_slug }}.readthedocs.io/) - [Browse GitHub Code Repository](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/)
+[Read The Latest Documentation](https://{{ cookiecutter.project_slug }}.readthedocs.io/) - [Browse GitHub Code Repository](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/)
 
 _________________
 
@@ -17,7 +17,7 @@ _________________
 
 ### Contributors
 
-Thanks to all that ontribute making this package what it is !
+Thanks to all that contribute making this package what it is !
 
 <a href="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/graphs/contributors">
   <img src="https://contrib.rocks/image?repo={{cookiecutter.github_username}}/{{cookiecutter.project_name}}" />
