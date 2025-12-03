@@ -23,7 +23,7 @@ name = "openalea.{{ cookiecutter.project_slug }}"
 authors = [
   { name = "{{ cookiecutter.full_name }}" },
 ]
-description = "FSPM tools for OpenAlea"
+description = "{{ cookiecutter.description }}"
 readme = "README.md"
 license = "CECILL-C"
 license-files = ["LICEN[CS]E*"]
@@ -76,7 +76,6 @@ channels = [
   "conda-forge"
 ]
 dependencies = [
-    "openalea.plantgl",
 ]
 
 [project.urls]
