@@ -3,13 +3,13 @@ import os
 import sys
 from importlib.metadata import metadata
 
-pkg_name='{{ cookiecutter.project_slug }}'
-meta = metadata('openalea.' + pkg_name)
+pkg_name = "{{ cookiecutter.project_slug }}"
+meta = metadata("openalea." + pkg_name)
 release = meta.get("version")
 # for example take major/minor
-version = ".".join(release.split('.')[:3])
-author = meta['Author'].split(',')[0] + "et al."
-desc = meta['Summary']
+version = ".".join(release.split(".")[:3])
+author = meta["Author"].split(",")[0] + "et al."
+desc = meta["Summary"]
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -33,13 +33,14 @@ extensions = [
     "sphinx.ext.todo",  # support for todo items
     "sphinx.ext.napoleon",  # support for numpy and google style docstrings
     "sphinx_favicon",  # support for favicon
+    "openalea.widgets.sphinx",  # support for openalea 3D widgets
     "nbsphinx",  # for integrating jupyter notebooks
     "myst_parser",  # for parsing .md files
 ]
 
 
 nbsphinx_thumbnails = {
-    'examples/Segmentation': '_static/segmentation_thumb.png',
+    "examples/Segmentation": "_static/segmentation_thumb.png",
 }
 
 nbsphinx_allow_errors = True
@@ -136,7 +137,15 @@ latex_documents = [
 # -- Options for manual page output ---------------------------------------
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "openalea.{{ cookiecutter.project_slug}}", "{{ cookiecutter.project_name}} Documentation", [author], 1)]
+man_pages = [
+    (
+        master_doc,
+        "openalea.{{ cookiecutter.project_slug}}",
+        "{{ cookiecutter.project_name}} Documentation",
+        [author],
+        1,
+    )
+]
 
 # -- Options for Texinfo output -------------------------------------------
 # Grouping the document tree into Texinfo files. List of tuples
